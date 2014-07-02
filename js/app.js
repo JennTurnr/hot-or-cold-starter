@@ -1,10 +1,13 @@
 
 $(document).ready(function(){
+	//var entry = $('eachGuess').val();
 
 var eachGuess = function() {
-	var entry = $('#eachGuess').val();
+	var entry = $('#userGuess').val();
+	//console.log( 'starting eachGuess()');
 	$('#guessList').append('<li>'+entry+'</li>');
 	$('#userGuess').val('');
+	$('li').css('border', '2px solid yellow');
 	//$('entry').append('#guesslist');
 	event.preventDefault();
 };
