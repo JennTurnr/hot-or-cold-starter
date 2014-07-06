@@ -20,12 +20,12 @@ var eachGuess = function() {
 	//$('#count').text(counter); //span div
 	//event.preventDefault();
 
-
-//var secretNumber = function() {
-	//if (entry >= 101 || entry <=0 || entry%1 !=0 || isNaN(entry)) {
-	//	alert("Enter a number between 1 and 100!");
-	//	$('#count').text
-		/*return i;
+/*
+var secretNumber = function() {
+	if (entry >= 101 || entry <=0 || entry%1 !=0 || isNaN(entry)) {
+	alert("Enter a number between 1 and 100!");
+		$('#count').text
+		return i;
 	} else {
 		alert("Enter a number between 1 and 100");
 	}
@@ -39,7 +39,7 @@ var eachGuess = function() {
 		return i;
 	}
 	secretNumber();
-
+*/
 
 
 	//**NEW GAME FUNCTION **
