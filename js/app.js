@@ -19,8 +19,11 @@ var eachGuess = function() {
 function invalidNumber() {
 var entry = $('#userGuess').val();
 if (entry >= 100 || entry <= 0 || entry === isNaN(entry)) {
+	//if(Math.round(data) != data) {
 	alert("Enter a number between 1 and 100!");
-}
+	$('#userGuess').val('').empty('');
+	//alert(typeof data === 'number' && data % 1 === 0);
+//}
 //if (entry >= 100 || entry <= 0 || entry === isNaN(entry)) {
 //	$('#guesslist').off();
 	//alert("Enter a number between 1 and 100!");
@@ -29,9 +32,15 @@ if (entry >= 100 || entry <= 0 || entry === isNaN(entry)) {
 //	$('#guessList').append('<li>'+entry+'</li>');
 //	$('#userGuess').val('');
 }
+}
 
 
-
+//function addCount() {
+//	var count = 0;
+//	for (i = 0; i <= 100; i+=1) {
+//		return i;
+//	}
+// }
 
 //}
 //$('#counter').text(counter);
@@ -83,7 +92,7 @@ var secretNumber = function() {
 
 $(function() {
 	$('form').on('submit', eachGuess);
-	$('form').on('submit', invalidNumber); //alerts to enter a number btwn 1 and 100
+	$('form').on('click', invalidNumber); //alerts to enter a number btwn 1 and 100
 	//$('form').on('submit', secretNumber);
 	//$('.new').on('click', newGame); 
 });
